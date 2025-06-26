@@ -11,6 +11,8 @@ excerpt: "Don't ignore these warning signs. Early intervention can prevent minor
 
 ## 🔍 The 5 Warning Signs You Shouldn’t Ignore
 
+![5 Warning Signs You Shouldn’t Ignore](/assets/images/5signyouneedpt.png)
+
 ### 1️⃣ Pain That Lasts More Than 3 Days  
 If you've been in pain for more than a few days, it’s time to pay attention. What seems like a minor tweak can easily become chronic without proper care.
 
