@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YW Physical Therapy - Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YEWLJK86Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+
+        gtag("config", "G-3YEWLJK86Q");
+    </script>
+</head>
+<body>
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-teal-400">YW Physical Therapy</a>
+        <nav class="hidden md:flex space-x-6 items-center">
+            <a href="/" class="text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+            <a href="/ai-pt/" class="text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+            <a href="/insurance-and-price/" class="text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+            <a href="/my-ai-approach/" class="text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+            <a href="/blog/" class="text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+            <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+            <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-semibold transition-colors">Book Appointment</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 px-4 pb-4">
+        <a href="/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+        <a href="/ai-pt/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+        <a href="/insurance-and-price/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+        <a href="/my-ai-approach/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+        <a href="/blog/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+        <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+        <a href="/booking/" class="block py-2 mt-2 bg-teal-500 text-white rounded-md text-center font-semibold transition-colors hover:bg-teal-600">Book Appointment</a>
+    </div>
+</header>
+
+
+    
+    
+<!-- Hero Section -->
+<section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center relative overflow-hidden" data-aos="fade-up">
+    <!-- 暗色遮罩 -->
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    <div class="relative z-10 p-8 md:p-16 rounded-lg max-w-4xl w-full mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Technology x Expertise x One-on-One Focus
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-10">
+            Cutting-edge tools can speed up recovery—but what truly matters is being seen, heard, and receiving care that's truly personalized.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center mt-8">
+            <a href="/ai-pt/" class="bg-gray-700 hover:bg-gray-600 text-gray-200 px-4 py-2 rounded-md font-semibold transition-colors text-lg w-full md:w-auto">
+                Try Our Free AI PT
+            </a>
+            <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-semibold transition-colors text-lg w-full md:w-auto">
+                Book Appointment
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Our Mission Section -->
+<section id="mission" class="py-16 md:py-24 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-4">Our Mission</h2>
+        <p class="text-xl text-gray-300 mb-6">Not just a mission—care that's made just for you.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="card text-center">
+                <img src="https://placehold.co/80x80/34D399/ffffff?text=1v1" alt="One-on-One Insurance Care" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">One-on-One Insurance Care</h3>
+                <p class="text-gray-300">Personalized treatment plans to ensure every client receives focused, individualized care.</p>
+            </div>
+            <div class="card text-center">
+                <img src="https://placehold.co/80x80/34D399/ffffff?text=Tech" alt="Advanced Technology Support" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Advanced Technology Support</h3>
+                <p class="text-gray-300">Maximize outcomes with the latest physical therapy equipment and science-backed methods.</p>
+            </div>
+            <div class="card text-center">
+                <img src="https://placehold.co/80x80/34D399/ffffff?text=Recovery" alt="Enhanced Recovery Options" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Enhanced Recovery Options</h3>
+                <p class="text-gray-300">Optional advanced therapies to accelerate recovery and improve your results.</p>
+            </div>
+            <div class="card text-center">
+                <img src="https://placehold.co/80x80/34D399/ffffff?text=AI" alt="AI Motion Screening" class="mx-auto mb-4 rounded-full">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">AI Motion Screening</h3>
+                <p class="text-gray-300">Discover underlying issues and track your progress with our AI-powered assessment tools.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI-Assisted Evaluation Section -->
+<section id="ai-evaluation" class="py-16 md:py-24 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-white mb-4">AI-Assisted Evaluation</h2>
+                <p class="text-xl text-gray-300 mb-6">Not just smart tech—smart care, made for you.</p>
+                <p class="text-gray-400 mb-8">
+                    We use intelligent AI tools and real clinical expertise to capture what your body has been trying to tell you. This helps us understand how you move, pinpoint problems, and craft solutions so you can feel better—faster.
+                </p>
+                <a href="/my-ai-approach/" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/assets/AIPT.png" alt="AI-Assisted Evaluation Illustration" class="rounded-lg shadow-xl w-full h-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Advanced Technology Section -->
+<section id="technology" class="py-16 md:py-24 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-4">Our Advanced Technology</h2>
+        <p class="text-xl text-gray-300 mb-6">Technology that listens. Results that matter.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div class="card text-center">
+                <img src="/assets/rapid-release.png" alt="Rapid Release Therapy" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Rapid Release Therapy</h3>
+                <a href="/rapid-release/" class="text-teal-500 hover:text-teal-300 font-medium">Learn More &rarr;</a>
+            </div>
+            <div class="card text-center">
+                <img src="/assets/Theragun.png" alt="Theragun + Red Light" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Theragun + Red Light</h3>
+                <a href="/theragun/" class="text-teal-500 hover:text-teal-300 font-medium">Learn More &rarr;</a>
+            </div>
+            <div class="card text-center">
+                <img src="/assets/Compex.png" alt="Compex EMS" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Compex EMS</h3>
+                <a href="/compex/" class="text-teal-500 hover:text-teal-300 font-medium">Learn More &rarr;</a>
+            </div>
+            <div class="card text-center">
+                <img src="/assets/shockwave.jpg" alt="Shockwave Therapy" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Shockwave</h3>
+                <a href="/shockwave/" class="text-teal-500 hover:text-teal-300 font-medium">Learn More &rarr;</a>
+            </div>
+            <div class="card text-center">
+                <img src="/assets/Laser.png" alt="Class 4 Laser" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-teal-400 mb-2">Class 4 Laser</h3>
+                <a href="/class-4-laser/" class="text-teal-500 hover:text-teal-300 font-medium">Learn More &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="py-16 md:py-24 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                <p class="text-xl text-gray-300 mb-6">Smarter movement starts here—combining technology, science, and heart.</p>
+                <p class="text-gray-400 mb-4">
+                    Hi, I’m Dr. Yu-Kuang Wu (PT, PhD), a physical therapist dedicated to integrating hands-on care with smart technology. Since 2016, I’ve been using AI tools and advanced equipment to help people move better, feel better, and quickly identify the root causes of discomfort.
+                </p>
+                <p class="text-gray-400">
+                    Outside the clinic, I conduct research at Mount Sinai Hospital and the Bronx VA, working to provide better care for people with mobility challenges. Whether you’re dealing with pain or simply want to move and feel your best, I’m here to support you with science-driven, compassionate care.
+                </p>
+            </div>
+            <div class="md:w-1/3">
+                <img src="/assets/me.jpg" alt="Dr. Yu-Kuang Wu Portrait" class="rounded-full shadow-xl mx-auto w-64 h-64 md:w-80 md:h-80 object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI PT Introduction Section - Enhanced with Custom Messaging -->
+<section id="ai-pt-form" class="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+    
+    <!-- Icon & Title -->
+    <div class="mb-6">
+        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-teal-500 text-white text-3xl mx-auto mb-4">
+        🤖
+        </div>
+        <h2 class="text-4xl font-extrabold text-white leading-tight">Built by a Physical Therapist, Powered by AI</h2>
+    </div>
+
+    <!-- Description -->
+    <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+        I developed this <span class="text-white font-semibold">AI Physical Therapy Chatbot</span> to help you quickly identify <span class="text-teal-400 font-semibold">muscle and soft tissue concerns</span>, and get clear, effective <span class="text-white font-semibold">home exercise suggestions</span>—anytime, without needing an appointment.
+    </p>
+
+    <!-- Feature Badges -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <span class="bg-teal-600 text-white text-sm font-medium px-4 py-2 rounded-full">Designed by a Licensed PT</span>
+        <span class="bg-gray-700 text-white text-sm font-medium px-4 py-2 rounded-full">Targets Muscle & Soft Tissue Issues</span>
+        <span class="bg-gray-700 text-white text-sm font-medium px-4 py-2 rounded-full">Instant Home Exercise Plan</span>
+        <span class="bg-gray-700 text-white text-sm font-medium px-4 py-2 rounded-full">No Signup or App Needed</span>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="/ai-pt/" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold text-lg px-8 py-3 rounded-full transition duration-300 shadow-lg">
+        🚀 Try the AI PT Chatbot Now
+    </a>
+    </div>
+</section>
+
+<!-- Footer is included in layout.njk -->
+
+
+
+    
+    <!-- Footer -->
+    <footer id="contact" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-center gap-10">
+                <!-- Left: Map -->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0">
+                    <h2 class="text-2xl font-bold text-teal-400 mb-6 text-left md:text-left">The Clinic</h2>
+                    <div class="rounded-lg overflow-hidden shadow-xl w-full h-[300px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5849760949436!2d-73.96991798459388!3d40.75050097932777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25900995df767%3A0x9d33d13d9f0e0081!2s333%20E%2049th%20St%2C%20New%20York%2C%20NY%2010017%2C%20USA!5e0!3m2!1sen!2stw!4v1622690000000!5m2!1sen!2stw"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Right: Clinic Info，強制頂對齊-->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0 flex flex-col justify-start">
+                    <div class="text-left md:text-left mt-0 md:mt-[55px]"> <!-- 關鍵在這裡！ -->
+                        <p class="mb-2"><strong class="text-teal-400">Address:</strong> 333 E 49th St., Lobby E, New York, NY 10017</p>
+                        <p class="mb-2"><strong class="text-teal-400">Email:</strong> <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:underline text-gray-200">ywphysicaltherapy@gmail.com</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Phone:</strong> <a href="tel:3475715717" class="hover:underline text-gray-200">347-571-5717</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Opening Hours (By appointment only):</strong></p>
+                        <ul class="list-disc list-inside text-gray-400 ml-4 mb-4">
+                            <li>Monday: 10am - 4pm</li>
+                            <li>Wednesday: 10am - 4pm</li>
+                            <li>Thursday: 10am - 4pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> YW Physical Therapy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
+

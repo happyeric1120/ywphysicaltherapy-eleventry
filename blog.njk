@@ -1,0 +1,58 @@
+---
+layout: layout.njk
+title: Blog | YW Physical Therapy
+---
+
+<!-- Hero Section -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Physical Therapy Blog</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-8">
+      Insights on movement, recovery, and the latest in physical therapy technology
+    </p>
+  </div>
+</section>
+
+<!-- Blog Posts -->
+<section class="py-16 bg-gray-950">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="grid gap-8">
+      {% for post in collections.blog | reverse %}
+        <article class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+          <div class="p-8">
+            <div class="flex items-center text-sm text-gray-400 mb-4">
+              <time datetime="{{ post.date | date('%Y-%m-%d') }}">
+                {{ post.date | date('%B %d, %Y') }}
+              </time>
+              {% if post.data.tags %}
+                <span class="mx-2">•</span>
+                <div class="flex gap-2">
+                  {% for tag in post.data.tags %}
+                    {% if tag != "blog" %}
+                      <span class="bg-teal-600 text-white px-2 py-1 rounded text-xs">{{ tag }}</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
+              <a href="{{ post.url }}" class="hover:text-teal-400 transition-colors">
+                {{ post.data.title }}
+              </a>
+            </h2>
+            {% if post.data.excerpt %}
+              <p class="text-gray-300 mb-6">{{ post.data.excerpt }}</p>
+            {% endif %}
+            <a href="{{ post.url }}" class="inline-flex items-center text-teal-400 hover:text-teal-300 font-semibold">
+              Read More
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,170 @@
+---
+layout: layout.njk
+title: Insurance & Price | YW Physical Therapy
+---
+
+<style>
+    /* 給深色背景用的半透明遮罩 */
+    .bg-blur-dark {
+        background: rgba(20, 20, 20, 0.7);
+        backdrop-filter: blur(2px);
+    }
+    /* 保險icon卡片可自定icon色/背景 */
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5f5ef;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<!-- Hero Banner  左文右圖 -->
+<section class="w-full bg-gray-100 flex flex-col md:flex-row items-stretch px-4 md:px-32 py-10 md:py-20">
+    <div class="w-full md:w-1/2 flex flex-col justify-center pr-0 md:pr-8">
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+            Insurance & Premium<br>Self-Pay Options for<br>Physical Therapy
+        </h1>
+        <p class="text-lg md:text-xl text-gray-800 mb-8 font-semibold">
+            Whether you're using insurance or paying out-of-pocket, I provide personalized care with advanced technology to help you move and feel better. My one-person practice offers both insurance-covered treatment and premium self-pay options to meet your specific needs.
+        </p>
+    </div>
+    <div class="w-full md:w-1/2 flex items-center justify-center bg-gray-200 p-4 md:p-8">
+        <img src="/assets/insurance-card.png" alt="Advanced Therapy Devices" class="rounded-xl shadow-lg w-full max-w-md object-cover">
+    </div>
+</section>
+
+<!-- 保險三大重點 -->
+<section class="w-full relative py-20 px-2" style="background-image: url('/assets/insurance-bg.jpg'); background-size:cover; background-position:center;">
+    <div class="bg-blur-dark w-full h-full absolute inset-0"></div>
+    <div class="relative z-10 max-w-6xl mx-auto">
+        <h2 class="text-5xl font-serif font-bold mb-14 text-white text-center">Insurance Plans Accepted</h2>
+        <div class="grid md:grid-cols-3 gap-10 text-white">
+            <div class="p-6 rounded-xl bg-black/40 flex flex-col items-center text-center">
+                <div class="icon-box"><span>✔️</span></div>
+                <h3 class="text-2xl font-serif font-semibold mb-2">Major Plans Accepted</h3>
+                <p class="text-gray-200">
+                  I currently accept most <span class="font-semibold text-teal-300">commercial insurance plans</span> such as:
+                  <br>
+                  <span class="text-white">Aetna, UnitedHealthcare (UHC), and Blue Cross Blue Shield (BCBS)</span>.
+                </p>
+                <p class="text-sm text-gray-400 mt-4 italic">
+                  If you have a <span class="text-white">Medicaid or Medicare managed plan</span> like HealthFirst, WellCare, or VillageCare,  
+                  please <a href="https://docs.google.com/forms/d/e/1FAIpQLScqejyOiePPbtYuqYxp8nyU72RRFlQv6encnne7-noMVKlexA/viewform?usp=header" target="_blank" class="text-teal-300 underline hover:text-teal-100">check your insurance coverage here</a>.
+                  I'll personally review and let you know if I can accept your plan.
+                </p>
+            </div>
+            <div class="p-6 rounded-xl bg-black/40 flex flex-col items-center text-center">
+                <div class="icon-box"><span>❓</span></div>
+                <h3 class="text-2xl font-serif font-semibold mb-2">Check Your Coverage</h3>
+                <p class="text-gray-200">
+                  Not sure if your insurance is accepted? Use the link below to fill out a short form.  
+                  I'll verify your coverage and email you within <span class="text-white font-semibold">3 business day</span>.
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScqejyOiePPbtYuqYxp8nyU72RRFlQv6encnne7-noMVKlexA/viewform?usp=header" target="_blank" class="mt-4 inline-block text-teal-300 underline hover:text-teal-100">
+                  👉 Check Your Insurance Coverage
+                </a>
+            </div>
+            <div class="p-6 rounded-xl bg-black/40 flex flex-col items-center text-center">
+                <div class="icon-box"><span>💡</span></div>
+                <h3 class="text-2xl font-serif font-semibold mb-2">Understanding Your Costs</h3>
+                <p>
+                    Some plans have deductibles, copays, or out-of-pocket limits. I'll explain what to expect so there are no surprises.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 自費價格表區塊 -->
+<section class="w-full relative py-20 px-2" style="background-image: url('/assets/selfpay-bg.jpg'); background-size:cover; background-position:center;">
+    <div class="bg-blur-dark w-full h-full absolute inset-0"></div>
+    <div class="relative z-10 max-w-6xl mx-auto">
+        <h2 class="text-5xl font-serif font-bold mb-12 text-white">Self-Pay Options & First Visit Information</h2>
+        <div class="overflow-x-auto rounded-2xl bg-black/30 mb-8">
+            <table class="min-w-full text-lg">
+                <thead>
+                    <tr class="text-left text-white font-bold bg-black/50">
+                        <th class="px-6 py-4">Service</th>
+                        <th class="px-6 py-4">Price</th>
+                        <th class="px-6 py-4">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="px-6 py-4">Radical Shockwave + Laser</td>
+                        <td class="px-6 py-4">$60</td>
+                        <td class="px-6 py-4">For soft tissue recovery and pain relief</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="px-6 py-4">Focused Shockwave</td>
+                        <td class="px-6 py-4">$140</td>
+                        <td class="px-6 py-4">Deep tissue precision for chronic issues</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="px-6 py-4">PT Evaluation</td>
+                        <td class="px-6 py-4">$120</td>
+                        <td class="px-6 py-4">Includes AI screening + treatment suggestions</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">Follow-Up PT (60 mins)</td>
+                        <td class="px-6 py-4">$100</td>
+                        <td class="px-6 py-4">Manual therapy, movement training, and tech support</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">AI Movement Assessment</td>
+                        <td class="px-6 py-4">$100</td>
+                        <td class="px-6 py-4">Standalone 10-movement AI screening with instant corrective exercise suggestions; no PT session required.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="max-w-3xl mx-auto mt-8">
+            <div class="bg-gradient-to-r from-teal-900 via-black/80 to-teal-900 text-white rounded-2xl px-8 py-6 shadow-2xl flex flex-col gap-4 border border-teal-700">
+          
+              <!-- 同理心段落 -->
+              <p class="text-sm italic text-teal-200">
+                💬 Life can be hard. If you're facing financial stress, please feel free to bring it up on your first visit. We'll figure something out together—your healing journey matters most.
+              </p>
+          
+              <!-- 保險新客優惠段落 -->
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-yellow-300 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 9v2m0 4h.01"></path>
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span class="text-lg font-bold tracking-wide">Special for First-Time Insurance Patients</span>
+              </div>
+          
+              <p class="text-base md:text-lg">
+                You can try advanced upgrades:
+                <span class="font-semibold text-teal-300">Radical Shockwave + Class 4 Laser for just $30</span>
+                or
+                <span class="font-semibold text-teal-300">Focused Shockwave for $60</span>.
+                For your first visit, bring your insurance card, photo ID, and referral (if required).<br>
+                <span class="font-semibold text-yellow-300">Tip:</span>
+                As a one-person clinic, I recommend <span class="font-semibold text-teal-200">texting or emailing</span> for fastest response within 3 business day.
+              </p>
+          
+            </div>
+        </div>
+</section>
+
+<!-- Check Insurance Coverage -->
+<section class="bg-gray-800 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold text-white mb-4">Not Sure If You're Covered?</h3>
+    <p class="text-lg text-gray-300 mb-6">
+        Not sure if your insurance is accepted? Just fill out this short form—I'll look into it for you and usually get back via email within <span class="text-white font-semibold">3 business day</span>.  
+        No pressure, no commitments—just support and clarity.
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqejyOiePPbtYuqYxp8nyU72RRFlQv6encnne7-noMVKlexA/viewform?usp=header" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-400 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-200">Check Your Insurance Coverage</a>
+    </div>
+</section>
+
+
+

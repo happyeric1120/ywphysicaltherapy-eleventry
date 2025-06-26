@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted Physical Therapy | YW Physical Therapy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YEWLJK86Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+
+        gtag("config", "G-3YEWLJK86Q");
+    </script>
+</head>
+<body>
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-teal-400">YW Physical Therapy</a>
+        <nav class="hidden md:flex space-x-6 items-center">
+            <a href="/" class="text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+            <a href="/ai-pt/" class="text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+            <a href="/insurance-and-price/" class="text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+            <a href="/my-ai-approach/" class="text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+            <a href="/blog/" class="text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+            <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+            <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-semibold transition-colors">Book Appointment</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 px-4 pb-4">
+        <a href="/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+        <a href="/ai-pt/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+        <a href="/insurance-and-price/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+        <a href="/my-ai-approach/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+        <a href="/blog/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+        <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+        <a href="/booking/" class="block py-2 mt-2 bg-teal-500 text-white rounded-md text-center font-semibold transition-colors hover:bg-teal-600">Book Appointment</a>
+    </div>
+</header>
+
+
+    
+    
+<!-- HERO -->
+<section class="relative h-72 md:h-96 flex items-center justify-center overflow-hidden">
+  <img src="/assets/bg-ai-header.png" alt="AI Movement Assessment" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="relative z-10 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white bg-black/70 px-8 py-4 rounded-xl shadow-xl inline-block">AI-Assisted Movement & Muscle Care</h1>
+    <p class="mt-4 text-xl md:text-2xl text-teal-300 font-medium drop-shadow">Get more than just pain relief—discover the future of personalized movement assessment.</p>
+  </div>
+</section>
+
+<!-- WHY AI-PT -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-4">Why Choose AI + Advanced Tech?</h2>
+    <p class="text-lg md:text-xl text-gray-300 mb-8">
+      At YW Physical Therapy, I combine years of manual therapy expertise with AI-powered movement analysis and cutting-edge devices. The result? Faster recovery, precise diagnosis of movement faults, and a training plan built just for you.
+    </p>
+  </div>
+  <div class="max-w-5xl mx-auto grid gap-10 md:grid-cols-3 px-4">
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center shadow-lg">
+          <img src="/assets/ai-evaluation.png" alt="AI-Powered Assessment Icon" class="w-24 h-24 mb-3">
+          <h3 class="text-xl font-semibold text-teal-300 mb-2 text-center">AI-Powered Movement Analysis</h3>
+          <p class="text-gray-200 text-center">
+            A smart blend of AI-assisted clinical evaluation and functional movement screening. Whether you're in pain or optimizing performance, our system detects hidden issues and gives you a personalized path forward—with clear exercises and expert insight.
+          </p>
+    </div>
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center shadow-lg">
+      <img src="/assets/tools-to-treat.png" alt="Advanced Devices" class="w-24 h-24 mb-3">
+      <h3 class="text-xl font-semibold text-teal-300 mb-2 text-center">Advanced Device Intervention</h3>
+      <p class="text-gray-200 text-center">
+        Rapid Release, EMS, shockwave, laser, and more—select the right tool for your unique soft tissue problem, not a one-size-fits-all protocol.
+      </p>
+    </div>
+    <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center shadow-lg">
+      <img src="/assets/corrective-exercise.png" alt="Corrective Exercise" class="w-24 h-24 mb-3">
+      <h3 class="text-xl font-semibold text-teal-300 mb-2 text-center">Personalized Corrective Exercise</h3>
+      <p class="text-gray-200 text-center">
+        Every client gets a custom movement plan targeting your specific deficits, delivered with clear instructions and ongoing follow-up.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="py-16 bg-gray-950">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">How My AI-Powered Process Works</h2>
+    
+    <!-- AI-Assisted Evaluation & PT -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-bold text-teal-400 mb-4">1. AI-Assisted Evaluation & Physical Therapy</h3>
+      <ol class="list-decimal ml-6 space-y-2 text-lg text-gray-200">
+        <li>
+          <span class="font-semibold text-teal-300">Comprehensive Intake:</span>
+          Share your concerns and goals for therapy.
+        </li>
+        <li>
+          <span class="font-semibold text-teal-300">AI-Assisted Movement Evaluation:</span>
+          I combine advanced AI analysis with hands-on clinical tests for a complete picture of your movement.
+        </li>
+        <li>
+          <span class="font-semibold text-teal-300">Pinpoint the Cause:</span>
+          Identify if your issue is soft tissue, joint restriction, or movement dysfunction—not nerve injury.
+        </li>
+        <li>
+          <span class="font-semibold text-teal-300">Advanced Treatment & Tech:</span>
+          The right device (shockwave, laser, EMS, etc.) plus manual therapy and education as needed.
+        </li>
+        <li>
+          <span class="font-semibold text-teal-300">Custom Corrective Exercise Plan:</span>
+          You get a personalized program with feedback and ongoing support.
+        </li>
+      </ol>
+    </div>
+    
+    <!-- AI Movement Assessment (Wellness) -->
+    <div>
+      <h3 class="text-2xl font-bold text-indigo-400 mb-4">2. AI Movement Assessment (Wellness & Performance)</h3>
+      <ol class="list-decimal ml-6 space-y-2 text-lg text-gray-200">
+        <li>
+          <span class="font-semibold text-indigo-300">10 Functional Movement Tests:</span>
+          AI analyzes your movement and spots compensations, mobility limits, and weaknesses.
+        </li>
+        <li>
+          <span class="font-semibold text-indigo-300">Instant Feedback & Exercise Suggestions:</span>
+          Get a wellness-focused report with tailored exercise recommendations for self-improvement.
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR? -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-4">Who Benefits Most?</h2>
+    <p class="text-lg md:text-xl text-gray-200 mb-8">
+      My methods are ideal for people with:<br>
+      <span class="text-white font-semibold">• Chronic muscle or tendon pain<br>
+      • Sports, work, or daily activity injuries<br>
+      • Muscle tightness, imbalance, or fatigue<br>
+      • Poor posture or restricted mobility</span>
+      <br><br>
+      <span class="text-gray-400 text-base">Not for neurological injury or severe nerve damage (e.g. spinal cord injury, stroke, ALS).</span>
+    </p>
+  </div>
+</section>
+
+  <!-- SAMPLE REPORT (Optional Section) -->
+  <section class="py-12 bg-gray-950">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-semibold text-teal-400 mb-4">What You Get: AI Movement Report & Custom Plan</h3>
+  
+      <!-- Clickable Image -->
+      <img src="/assets/ces-sample-plan-1.png"
+          alt="Sample AI Movement Report"
+          class="w-full max-w-md mx-auto rounded-xl shadow-lg mb-4 cursor-pointer"
+          onclick="document.getElementById('reportModal').classList.remove('hidden')">
+  
+      <p class="text-gray-300 text-lg">
+          After your session, you'll receive a summary of findings and an easy-to-follow corrective exercise program—so you always know exactly what to work on and how to progress.
+      </p>
+      </div>
+  
+      <!-- Modal -->
+      <div id="reportModal"
+          class="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center hidden"
+          onclick="this.classList.add('hidden')">
+      <img src="/assets/ces-sample-plan-1.png"
+          alt="Enlarged AI Movement Report"
+          class="max-w-full max-h-full rounded-xl shadow-2xl border-4 border-white" />
+      </div>
+  </section>
+
+
+
+
+    
+    <!-- Footer -->
+    <footer id="contact" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-center gap-10">
+                <!-- Left: Map -->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0">
+                    <h2 class="text-2xl font-bold text-teal-400 mb-6 text-left md:text-left">The Clinic</h2>
+                    <div class="rounded-lg overflow-hidden shadow-xl w-full h-[300px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5849760949436!2d-73.96991798459388!3d40.75050097932777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25900995df767%3A0x9d33d13d9f0e0081!2s333%20E%2049th%20St%2C%20New%20York%2C%20NY%2010017%2C%20USA!5e0!3m2!1sen!2stw!4v1622690000000!5m2!1sen!2stw"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Right: Clinic Info，強制頂對齊-->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0 flex flex-col justify-start">
+                    <div class="text-left md:text-left mt-0 md:mt-[55px]"> <!-- 關鍵在這裡！ -->
+                        <p class="mb-2"><strong class="text-teal-400">Address:</strong> 333 E 49th St., Lobby E, New York, NY 10017</p>
+                        <p class="mb-2"><strong class="text-teal-400">Email:</strong> <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:underline text-gray-200">ywphysicaltherapy@gmail.com</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Phone:</strong> <a href="tel:3475715717" class="hover:underline text-gray-200">347-571-5717</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Opening Hours (By appointment only):</strong></p>
+                        <ul class="list-disc list-inside text-gray-400 ml-4 mb-4">
+                            <li>Monday: 10am - 4pm</li>
+                            <li>Wednesday: 10am - 4pm</li>
+                            <li>Thursday: 10am - 4pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> YW Physical Therapy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
+

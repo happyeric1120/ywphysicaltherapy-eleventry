@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: #F3F4F6;
+}
+.hero-bg {
+    background-image: url('assets/treatment-room-AI.png');
+    background-size: cover;
+    background-position: center;
+}
+.section-title {
+    @apply text-3xl font-bold text-center mb-4 text-white;
+}
+.section-subtitle {
+    @apply text-xl text-center text-gray-300 mb-12;
+}
+.card {
+    @apply bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300;
+}
+.btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-colors duration-300;
+}
+.btn-primary {
+    @apply bg-teal-500 text-white hover:bg-teal-600;
+}
+.btn-secondary {
+    @apply bg-gray-700 text-gray-200 hover:bg-gray-600;
+}
+.form-input {
+    @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent;
+}
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}

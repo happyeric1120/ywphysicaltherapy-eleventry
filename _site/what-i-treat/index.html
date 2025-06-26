@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Treat | YW Physical Therapy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YEWLJK86Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+
+        gtag("config", "G-3YEWLJK86Q");
+    </script>
+</head>
+<body>
+    <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold text-teal-400">YW Physical Therapy</a>
+        <nav class="hidden md:flex space-x-6 items-center">
+            <a href="/" class="text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+            <a href="/ai-pt/" class="text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+            <a href="/insurance-and-price/" class="text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+            <a href="/my-ai-approach/" class="text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+            <a href="/blog/" class="text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+            <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+            <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md font-semibold transition-colors">Book Appointment</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 px-4 pb-4">
+        <a href="/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+        <a href="/ai-pt/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">AI PT</a>
+        <a href="/insurance-and-price/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Insurance & Pricing</a>
+        <a href="/my-ai-approach/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">My AI Approach</a>
+        <a href="/blog/" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Blog</a>
+        <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:text-teal-400 transition-colors">Contact Me</a>
+        <a href="/booking/" class="block py-2 mt-2 bg-teal-500 text-white rounded-md text-center font-semibold transition-colors hover:bg-teal-600">Book Appointment</a>
+    </div>
+</header>
+
+
+    
+    
+<!-- Hero Section -->
+<section class="relative h-64 md:h-80 flex items-center justify-center overflow-hidden">
+  <img src="/assets/hero-treatment.jpg" alt="Therapy Treatment" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="relative z-10 text-center">
+    <h1 class="text-3xl md:text-5xl font-extrabold text-white bg-black/60 px-6 py-2 rounded-xl inline-block shadow-lg">What I Treat</h1>
+    <p class="mt-4 text-lg md:text-xl text-teal-300 font-medium drop-shadow">
+      Integrating AI movement analysis and advanced therapy tools for precise, personalized recovery.
+    </p>
+  </div>
+</section>
+
+<!-- Main Treatments Grid -->
+<section class="py-16 bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid gap-10 md:gap-14 lg:gap-20 grid-cols-1 md:grid-cols-2">
+      <!-- 1. Plantar Fasciitis -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/plantar-faciilis.jpg" alt="Plantar Fasciitis" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-teal-400 mb-2">Plantar Fasciitis</h2>
+          <p class="text-gray-200 mb-2">
+            Persistent heel pain affects walking and standing. My approach uses <span class="text-teal-400 font-semibold">AI-driven gait/movement analysis</span>, advanced soft tissue therapy, and targeted mobility retraining to restore comfort and function.
+          </p>
+        </div>
+      </div>
+      <!-- 2. Chronic Back Pain -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/chronic-back-pain.png" alt="Chronic Back Pain" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-indigo-400 mb-2">Chronic Back Pain</h2>
+          <p class="text-gray-200 mb-2">
+            Limiting your activity and quality of life? Combining <span class="text-indigo-400 font-semibold">real-time movement evaluation, muscle activation technology</span>, and hands-on/manual therapy, I help address the true cause and guide you through functional, pain-free movement.
+          </p>
+        </div>
+      </div>
+      <!-- 3. Achilles Tendinitis -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/achilles-tendinitis.jpg" alt="Achilles Tendinitis" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-amber-400 mb-2">Achilles Tendinitis</h2>
+          <p class="text-gray-200 mb-2">
+            AI-assisted movement screening finds overload patterns. Treatment includes <span class="text-amber-400 font-semibold">personalized exercise correction, tendon load management, and device-assisted recovery</span> for faster and safer return to activity.
+          </p>
+        </div>
+      </div>
+      <!-- 4. Tennis Elbow -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/tennis-elbow.jpg" alt="Tennis Elbow" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-sky-400 mb-2">Tennis Elbow (Lateral Epicondylitis)</h2>
+          <p class="text-gray-200 mb-2">
+            Elbow pain from work or sports? I use <span class="text-sky-400 font-semibold">precise motion analysis and customized loading strategies</span> to relieve pain, support tendon healing, and improve grip strength.
+          </p>
+        </div>
+      </div>
+      <!-- 5. Calcific Tendonitis -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/calcific-tendinitis.png" alt="Calcific Tendonitis" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-pink-400 mb-2">Calcific Tendonitis</h2>
+          <p class="text-gray-200 mb-2">
+            Advanced imaging and movement evaluation help pinpoint restrictions. Care blends <span class="text-pink-400 font-semibold">manual therapy, AI-guided rehab, and progressive loading</span> for long-term relief.
+          </p>
+        </div>
+      </div>
+      <!-- 6. Sports Injuries -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/sports-injury.jpg" alt="Sports Injuries" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-fuchsia-400 mb-2">Sports Injuries</h2>
+          <p class="text-gray-200 mb-2">
+            From strains to sprains, I offer <span class="text-fuchsia-400 font-semibold">high-tech assessment and recovery protocols</span> to restore strength, mobility, and confidence, helping you safely return to your sport.
+          </p>
+        </div>
+      </div>
+      <!-- 7. Rotator Cuff/Shoulder Pain -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/shoulder-pain.jpg" alt="Rotator Cuff Injuries" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-lime-400 mb-2">Shoulder Pain (Rotator Cuff)</h2>
+          <p class="text-gray-200 mb-2">
+            Using <span class="text-lime-400 font-semibold">AI posture analysis and individualized exercise therapy</span>, I target movement dysfunctions, reduce pain, and promote optimal shoulder mobility.
+          </p>
+        </div>
+      </div>
+      <!-- 8. Muscle Recovery & Fatigue -->
+      <div class="flex flex-col md:flex-row items-center bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+        <img src="/assets/muscle-recovery.jpg" alt="Muscle Recovery" class="md:w-48 w-full h-44 object-cover rounded-l-2xl">
+        <div class="p-6 flex-1">
+          <h2 class="text-2xl font-bold text-orange-400 mb-2">Muscle Recovery & Fatigue</h2>
+          <p class="text-gray-200 mb-2">
+            Whether from intense training or daily stress, I use <span class="text-orange-400 font-semibold">advanced recovery technologies and movement optimization</span> to help your muscles recover faster and perform better.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-gray-950">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Recovery?</h2>
+    <p class="text-lg text-gray-300 mb-8">
+      Don't let pain hold you back. Get personalized treatment that combines the latest technology with expert care.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="/ai-pt/" class="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors duration-300">
+        Try Free AI Assessment
+      </a>
+      <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors duration-300">
+        Book Appointment
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    
+    <!-- Footer -->
+    <footer id="contact" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-center gap-10">
+                <!-- Left: Map -->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0">
+                    <h2 class="text-2xl font-bold text-teal-400 mb-6 text-left md:text-left">The Clinic</h2>
+                    <div class="rounded-lg overflow-hidden shadow-xl w-full h-[300px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5849760949436!2d-73.96991798459388!3d40.75050097932777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25900995df767%3A0x9d33d13d9f0e0081!2s333%20E%2049th%20St%2C%20New%20York%2C%20NY%2010017%2C%20USA!5e0!3m2!1sen!2stw!4v1622690000000!5m2!1sen!2stw"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Right: Clinic Info，強制頂對齊-->
+                <div class="w-full md:w-1/2 max-w-lg mx-auto md:mx-0 flex flex-col justify-start">
+                    <div class="text-left md:text-left mt-0 md:mt-[55px]"> <!-- 關鍵在這裡！ -->
+                        <p class="mb-2"><strong class="text-teal-400">Address:</strong> 333 E 49th St., Lobby E, New York, NY 10017</p>
+                        <p class="mb-2"><strong class="text-teal-400">Email:</strong> <a href="mailto:ywphysicaltherapy@gmail.com" class="hover:underline text-gray-200">ywphysicaltherapy@gmail.com</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Phone:</strong> <a href="tel:3475715717" class="hover:underline text-gray-200">347-571-5717</a></p>
+                        <p class="mb-2"><strong class="text-teal-400">Opening Hours (By appointment only):</strong></p>
+                        <ul class="list-disc list-inside text-gray-400 ml-4 mb-4">
+                            <li>Monday: 10am - 4pm</li>
+                            <li>Wednesday: 10am - 4pm</li>
+                            <li>Thursday: 10am - 4pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; <span id="currentYear"></span> YW Physical Therapy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
+

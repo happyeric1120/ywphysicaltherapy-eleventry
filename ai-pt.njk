@@ -1,0 +1,39 @@
+---
+layout: layout.njk
+title: AI PT | YW Physical Therapy
+---
+
+<!-- Main Section -->
+<section id="ai-pt-main" class="min-h-screen bg-gray-900 flex flex-col items-center justify-center px-4 py-16">
+    <div class="max-w-2xl w-full mx-auto mb-8 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">AI PT Chatbot</h1>
+        <p class="text-xl text-gray-300 mb-6">
+            Try our intelligent AI Physical Therapy chatbot. Describe your discomfort, ask PT questions, and get instant exercise suggestions—powered by OpenAI and Zapier.
+        </p>
+    </div>
+    <div class="w-full flex justify-center">
+        <div class="w-full max-w-[500px]">
+            <zapier-interfaces-chatbot-embed 
+                is-popup="false"
+                chatbot-id="cm6147usg003vfhuenufo9wtt"
+                height="600px"
+                width="100%">
+            </zapier-interfaces-chatbot-embed>
+        </div>
+    </div>
+    <div class="w-full flex justify-center">
+        <div class="max-w-2xl w-full mx-auto mt-10 text-center bg-gray-800 rounded-lg p-8 shadow-lg">
+            <h2 class="text-2xl font-bold text-teal-400 mb-2">Need Help or Have Suggestions?</h2>
+            <p class="text-gray-300 mb-4">
+                Got questions or suggestions? Email me at <a href="mailto:ywphysicaltherapy@gmail.com" class="text-teal-400 hover:text-teal-300 underline">ywphysicaltherapy@gmail.com</a>
+            </p>
+            <a href="/booking/" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-md font-semibold transition-colors">
+                Book an Appointment
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Zapier chatbot script -->
+<script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
+
