@@ -1,106 +1,110 @@
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #111827;
-    color: #F3F4F6;
+  font-family: 'Inter', sans-serif;
+  background-color: #111827;
+  color: #F3F4F6;
 }
 .hero-bg {
-    background-image: url('assets/treatment-room-AI.png');
-    background-size: cover;
-    background-position: center;
+  background-image: url('assets/treatment-room-AI.png');
+  background-size: cover;
+  background-position: center;
 }
 .section-title {
-    @apply text-3xl font-bold text-center mb-4 text-white;
+  @apply text-3xl font-bold text-center mb-4 text-white;
 }
 .section-subtitle {
-    @apply text-xl text-center text-gray-300 mb-12;
+  @apply text-xl text-center text-gray-300 mb-12;
 }
 .card {
-    @apply bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300;
+  @apply bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300;
 }
 .btn {
-    @apply px-6 py-3 rounded-lg font-semibold transition-colors duration-300;
+  @apply px-6 py-3 rounded-lg font-semibold transition-colors duration-300;
 }
 .btn-primary {
-    @apply bg-teal-500 text-white hover:bg-teal-600;
+  @apply bg-teal-500 text-white hover:bg-teal-600;
 }
 .btn-secondary {
-    @apply bg-gray-700 text-gray-200 hover:bg-gray-600;
+  @apply bg-gray-700 text-gray-200 hover:bg-gray-600;
 }
 .form-input {
-    @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent;
+  @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent;
 }
 .menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.4s;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
 }
+
+/* Blog styles ...（原本的保持不動） */
 article.blog-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0f766e;
-  }
-  
-  article.blog-content h2 {
-    font-size: 1.75rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: #0e7490;
-  }
-  
-  article.blog-content p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  article.blog-content ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  article.blog-content a {
-    color: #0e7490;
-    text-decoration: underline;
-  }
-  .blog-content h1 {
-    font-size: 2.25rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #0f766e;
-  }
-  
-  .blog-content h2 {
-    font-size: 1.75rem;
-    margin-top: 1.75rem;
-    margin-bottom: 1rem;
-    color: #0e7490;
-  }
-  
-  .blog-content p {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
-  }
-  
-  .blog-content ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .blog-content li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .blog-content a {
-    color: #0e7490;
-    text-decoration: underline;
-  }
-  
-  .blog-content strong {
-    font-weight: 600;
-  }
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0f766e;
+}
+article.blog-content h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #0e7490;
+}
+article.blog-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #333;
+}
+article.blog-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+article.blog-content a {
+  color: #0e7490;
+  text-decoration: underline;
+}
+
+.blog-content h1 {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0f766e;
+}
+.blog-content h2 {
+  font-size: 1.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  color: #0e7490;
+}
+.blog-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.blog-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+.blog-content a {
+  color: #0e7490;
+  text-decoration: underline;
+}
+.blog-content strong {
+  font-weight: 600;
+}
+
+/* 🔹 新增的保險規則：避免圖片撐爆版面、避免橫向捲動 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
