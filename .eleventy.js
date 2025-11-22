@@ -46,3 +46,18 @@ module.exports = function(eleventyConfig) {
   };
 };
 
+module.exports = function(eleventyConfig) {
+  // 讓 Eleventy 直接把根目錄的 favicon.ico 複製到 _site
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+
+  // 如果你想連 assets 裡的 PNG 也一起複製，可以加這行（可選）
+  eleventyConfig.addPassthroughCopy({ "assets/favicon": "assets/favicon" });
+
+  return {
+    dir: {
+      input: ".",
+      output: "_site"
+    }
+  };
+};
+
