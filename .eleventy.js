@@ -1,14 +1,19 @@
+// .eleventy.js
 module.exports = function(eleventyConfig) {
+  // 靜態檔案 passthrough
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("main.js");
   eleventyConfig.addPassthroughCopy("assets");
 
-  // Add blog collection
+  // 把根目錄的 favicon.ico 也一起複製到 _site
+  eleventyConfig.addPassthroughCopy("favicon.ico");
+
+  // Blog collection（你原本就有）
   eleventyConfig.addCollection("blog", function(collectionApi) {
     return collectionApi.getFilteredByGlob("blog/*.md");
   });
 
-  // Add date filter
+  // date filter（給 blog.njk 用）
   eleventyConfig.addFilter("date", function(date, format) {
     const d = new Date(date);
     if (format === '%Y-%m-%d') {
@@ -23,7 +28,7 @@ module.exports = function(eleventyConfig) {
     return d.toLocaleDateString();
   });
 
-  // Add permalink for pages
+  // permalink 全域設定（你原本就有）
   eleventyConfig.addGlobalData("permalink", function() {
     return (data) => {
       if (data.page.fileSlug === "index") {
@@ -45,19 +50,3 @@ module.exports = function(eleventyConfig) {
     dataTemplateEngine: "njk"
   };
 };
-
-module.exports = function(eleventyConfig) {
-  // 讓 Eleventy 直接把根目錄的 favicon.ico 複製到 _site
-  eleventyConfig.addPassthroughCopy("favicon.ico");
-
-  // 如果你想連 assets 裡的 PNG 也一起複製，可以加這行（可選）
-  eleventyConfig.addPassthroughCopy({ "assets/favicon": "assets/favicon" });
-
-  return {
-    dir: {
-      input: ".",
-      output: "_site"
-    }
-  };
-};
-
